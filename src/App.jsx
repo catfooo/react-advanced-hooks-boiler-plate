@@ -1,24 +1,22 @@
-import { UseRefDistributive } from "./components/useRef/UseRefDistributive";
-import { UseReducerDistributive } from "./components/useReducer/UseReducerDistributive";
-import { UseLayoutEffectDistributive } from "./components/useLayoutEffect/UseLayoutEffectDistributive";
-import { CustomHooksDistributive } from "./components/customHooks/CustomHooksDistributive";
+import { DomExample } from "./components/DomExample"
 
 export const App = () => {
-  // Staticc Data Inyected through {} reference
+  // Static Data Injected Through {} reference
   const appContent = {
-    heading: "Technigo - Advanced Hooks Boilerplate",
+    heading: "Technigo - The useRef Hook",
     reactivedataExampleOne:
-      "Within this repo you can find a working example of the following hooks: useRef, useLayoutEffect, useReducer and some custom hooks 😉",
-  };
+      "These examples showcase various ways useRef can be used to interact with and manipulate DOM elements directly within functional components in React.",
+  }
   return (
     <div>
       <h1>{appContent.heading}</h1>
       <p>{appContent.reactivedataExampleOne}</p>
+      {/* <p>{appContent.contentTwo}</p>
+      <p>{appContent.contentThree}</p>
+      <p>{appContent.contentFour}</p> */}
+
       {/* Hooks Here */}
-      <UseRefDistributive />
-      <UseReducerDistributive />
-      <UseLayoutEffectDistributive />
-      <CustomHooksDistributive />
+      <DomExample />
     </div>
-  );
-};
+  )
+}
