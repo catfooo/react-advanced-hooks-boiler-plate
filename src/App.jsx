@@ -1,11 +1,11 @@
-import { FetchData } from "./components/FetchData"
+import { Geolocation } from "./components/Geolocation"
 
 export const App = () => {
   // Static Data Injected through {} reference
   const appContent = {
     heading: "Technigo - Custom Hook in code",
     contentOne:
-      "useFetchData Hook Creation",
+      "useGeolocation Hook Creation",
   }
   return (
     <div>
@@ -18,7 +18,7 @@ export const App = () => {
       <p>{appContent.contentFour}</p>
 
       {/* Hooks Here */}
-      <FetchData />
+      <Geolocation />
       
     </div>
   )
