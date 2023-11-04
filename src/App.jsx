@@ -1,11 +1,11 @@
-import { ThemeChanger } from "./components/ThemeChanger"
+import { FetchData } from "./components/FetchData"
 
 export const App = () => {
   // Static Data Injected through {} reference
   const appContent = {
-    heading: "Technigo - Changing your website theme using the useLayoutEffect Hook",
+    heading: "Technigo - Custom Hook in code",
     contentOne:
-      "Imagine you have a website that uses a dark and a light theme, this can be accomplished by implementing the useLayoutEffect hook",
+      "useFetchData Hook Creation",
   }
   return (
     <div>
@@ -18,7 +18,7 @@ export const App = () => {
       <p>{appContent.contentFour}</p>
 
       {/* Hooks Here */}
-      <ThemeChanger />
+      <FetchData />
       
     </div>
   )
