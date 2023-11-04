@@ -1,10 +1,11 @@
-import { ToDoApp } from "./components/ToDoApp"
+import { SimpleCounter } from "./components/SimpleCounter"
+
 export const App = () => {
-  // Static Data Injectedd through {} reference
+  // Static Data Injected through {} reference
   const appContent = {
-    heading: "Technigo - Creating a to-do list with the useReducer hook",
+    heading: "Technigo - Simple Counter using the useLayoutEffect Hook",
     contentOne:
-      "Imagine creating a detailed to-do app. Lets create a component that uses the useReducer hook to keep track of your to-dos.",
+      "Imagine you are building counter that once the counter is clicked to increase in value we will update the title of the document with this value.",
   }
   return (
     <div>
@@ -17,7 +18,7 @@ export const App = () => {
       <p>{appContent.contentFour}</p>
 
       {/* Hooks Here */}
-      <ToDoApp />
+      <SimpleCounter />
       
     </div>
   )
