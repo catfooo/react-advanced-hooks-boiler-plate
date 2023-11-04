@@ -1,11 +1,11 @@
-import { SimpleCounter } from "./components/SimpleCounter"
+import { ThemeChanger } from "./components/ThemeChanger"
 
 export const App = () => {
   // Static Data Injected through {} reference
   const appContent = {
-    heading: "Technigo - Simple Counter using the useLayoutEffect Hook",
+    heading: "Technigo - Changing your website theme using the useLayoutEffect Hook",
     contentOne:
-      "Imagine you are building counter that once the counter is clicked to increase in value we will update the title of the document with this value.",
+      "Imagine you have a website that uses a dark and a light theme, this can be accomplished by implementing the useLayoutEffect hook",
   }
   return (
     <div>
@@ -18,7 +18,7 @@ export const App = () => {
       <p>{appContent.contentFour}</p>
 
       {/* Hooks Here */}
-      <SimpleCounter />
+      <ThemeChanger />
       
     </div>
   )
